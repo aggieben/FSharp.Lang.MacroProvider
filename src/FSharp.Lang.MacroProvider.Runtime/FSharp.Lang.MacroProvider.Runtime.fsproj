@@ -5,7 +5,7 @@
   <Import Project="..\..\netfx.props" />
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netstandard2.0; net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0; net47</TargetFrameworks>
     <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
   </PropertyGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
@@ -21,10 +21,6 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="FSharp.Lang.MacroProvider.Runtime.fs" />
     <None Include="paket.references" />
-  </ItemGroup>
-  <ItemGroup>
-    <!-- Be explicit about the version of FSharp.Core since we mention it in the manual nuget package spec -->
-    <PackageReference Include="FSharp.Core" Version="4.3.4" />
   </ItemGroup>
   <Target Name="BeforeBuild">
     <MSBuild Projects="..\FSharp.Lang.MacroProvider.DesignTime\FSharp.Lang.MacroProvider.DesignTime.fsproj" Targets="Restore" />

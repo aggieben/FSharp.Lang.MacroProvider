@@ -1,31 +1,30 @@
 type file
 id FSharp.Lang.MacroProvider
 authors
-    Steffen Forkmann, Gustavo Guerra, JohnDoeKyrgyz, Don Syme
+    Ben Collins
 owners
-    Steffen Forkmann, Gustavo Guerra, JohnDoeKyrgyz, Don Syme
+    Ben Collins
 projectUrl
-    http://github.com/fsprojects/FSharp.Lang.MacroProvider
+    http://github.com/aggieben/FSharp.Lang.MacroProvider
 iconUrl
     https://raw.githubusercontent.com/fsprojects/FSharp.Lang.MacroProvider/master/docs/files/img/logo.png
 licenseUrl
-    http://github.com/fsprojects/FSharp.Lang.MacroProvider/blob/master/LICENSE.txt
+    http://github.com/aggieben/FSharp.Lang.MacroProvider/blob/master/LICENSE.txt
 requireLicenseAcceptance
     false
 tags
     F# fsharp typeproviders FSharp.Lang.MacroProvider
 summary
-    This library is for the .NET platform implementing FSharp.Lang.MacroProvider.
+    This library is an implementation of a macro facility for F♯.
 description
-    This library is for the .NET platform implementing FSharp.Lang.MacroProvider.
+    This package provides a macro facility for F♯ implemented as a type provider.
 tags
     F# fsharp typeproviders FSharp.Lang.MacroProvider
 files
-    bin/Release/net45/FSharp.Lang.MacroProvider.Runtime.* ==> lib/net45
+    bin/Release/net47/FSharp.Lang.MacroProvider.Runtime.* ==> lib/net45
     bin/Release/netstandard2.0/FSharp.Lang.MacroProvider.Runtime.* ==> lib/netstandard2.0
     bin/Release/typeproviders/fsharp41/netstandard2.0/*.dll ==> typeproviders/fsharp41/netstandard2.0
-    bin/Release/typeproviders/fsharp41/netcoreapp2.0/*.dll ==> typeproviders/fsharp41/netcoreapp2.0
-    bin/Release/typeproviders/fsharp41/net45/*.dll ==> typeproviders/fsharp41/net45
+    bin/Release/typeproviders/fsharp41/net47/*.dll ==> typeproviders/fsharp41/net45
 references
     FSharp.Lang.MacroProvider.Runtime.dll
 dependencies
